@@ -1,0 +1,33 @@
+﻿@page
+@model SuperheroSocialClub.Pages.SuperherosModel
+@{
+}
+@{
+    ViewData["Title"] = "Superheroes";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Superhero Name</th>
+                <th scope="col">Secret Identity</th>
+                <th scope="col">Superpower</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var heroes in Data.SuperheroDb.Superheroes)
+            {
+            <tr>
+                <th scope="row">@heroes.Id</th>
+                <td>@heroes.SuperheroName</td>
+                <td>@heroes.SecretIdentity</td>
+                <td>@heroes.Superpower</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

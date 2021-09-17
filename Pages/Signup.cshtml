@@ -1,0 +1,33 @@
+﻿@page
+@model SuperheroSocialClub.Pages.SignupModel
+@{
+}
+@{
+    ViewData["Title"] = "Sign up";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+
+    <form method="post">
+        <div class="mb-3">
+            <label for="id" class="form-label">Id</label>
+            <input type="number" class="form-control w-25" id="id" asp-for="@Model.Superhero.Id" readonly/>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Superhero Name</label>
+            <input type="text" class="form-control w-25" id="superheroName" asp-for="@Model.Superhero.SuperheroName" />
+        </div>
+
+        <div class="mb-3">
+            <label for="secretIdentity" class="form-label">Secret Identity</label>
+            <input type="text" class="form-control w-25" id="secretIdentity" asp-for="@Model.Superhero.SecretIdentity" />
+        </div>
+        <div class="mb-3">
+            <label for="superpower" class="form-label">Superpower</label>
+            <input type="text" class="form-control w-25" id="superpower" asp-for="@Model.Superhero.Superpower" />
+        </div>
+
+        <button class="btn btn-danger" type="submit">Register</button>
+    </form>
+</div>
