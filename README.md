@@ -6,9 +6,13 @@ their details and change their abilities among other things.
 
 ## Languages
 * C#
+* HTML
+* CSS
+* JavaScript
 
 ## Frameworks
 * .NET
+* Bootstrap 5.1
 
 ## IDE
 [Visual Studio Community 2019](https://visualstudio.microsoft.com/)
